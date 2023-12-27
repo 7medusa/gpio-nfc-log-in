@@ -7,4 +7,4 @@ To download all important modules start download.py.
 
 How to use the Code:
 
-Save the file in your autostart dictory.
+Save the main.py file as .exe in your autostart dictory.
