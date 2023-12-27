@@ -1,0 +1,7 @@
+Python modules:
+-time
+-subprocess
+-hashlib
+-RPI.GPIO
+-mfrc522
+-binascii
