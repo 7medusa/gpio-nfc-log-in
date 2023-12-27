@@ -6,7 +6,7 @@ import hash
 
 hash_code = "b0c3fd36b5de1487ecf726db8edc1c05ab8b97f0ee224f9842b27d69844c2f51" #  hash of the password on the nfc_tag
 username = "username" #  username, please change this
-passwort = "password" #  in work...
+password = "password" #  in work...
 
  #  light control beginning
 GPIO.setwarnings(False)
@@ -38,13 +38,13 @@ if __name__ == "__main__":
     while True:
         read_nfc()
         if str(hash.hash_berechnung(nfc_text)) == hash_code:
-            print("korrekt")
+            print("correct")
             led_on(green)
-            log_in(username, passwort)
+            log_in(username, password)
             sleep(5)
             led_off(green)
         else:
-            print("falsch")
+            print("wrong")
             led_on(red)
             sleep(5)
             led_off(red)
