@@ -46,9 +46,9 @@ if __name__ == "__main__":
         if str(hash_berechnung(nfc_text)) == hash_code:
             print("correct")
             led_on(green)
-            log_in()
-            sleep(5)
+            sleep(3)
             led_off(green)
+            log_in()
         else:
             print("wrong")
             led_on(red)
