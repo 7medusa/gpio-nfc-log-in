@@ -1,7 +1,10 @@
 Requirements:
 
 All requirements are in the file requirements.txt.
-To download all important modules start download.py.
+To download all important modules run:
+
+
+pip install time subprocess hashlib RPI.GPIO mfrc522 binascii
 
 #+#
 
