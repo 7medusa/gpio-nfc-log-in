@@ -1,1 +1,9 @@
-This is a Code written in Python. You can log in into your Linux system, with a NFC tag and a NFC reader. To use the script you must start it with the boot of your system.
+Requirements:
+
+All requirements are in the file requirements.txt.
+
+#+#
+
+How to use the Code:
+
+Save the file in your autostart dictory.
