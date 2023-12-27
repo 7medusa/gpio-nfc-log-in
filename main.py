@@ -5,8 +5,6 @@ import subprocess
 import hash
 
 hash_code = "14b114aa5fadf41b4caa65f2dd788c0ae04a543231a6fadc7435257299dcec0d" #  hash of the password on the nfc_tag
-username = "username" #  username, please change this
-password = "normal" #  in work...
 
  #  light control beginning
 GPIO.setwarnings(False)
@@ -29,15 +27,9 @@ def read_nfc():
     id, nfc_text = reader.read()
 
 
-def log_in(username, password):
-    command = f"echo '{password}' | sudo -S -u {username} whoami"
-    try:
-        subprocess.run(command, shell=True, check=True)
-    except subprocess.CalledProcessError as e:
-        if "Authentication failure" in e.stderr:
-            print("error. wrong password")
-        else:
-            print("unknown error")
+def log_in():
+    command = "startx"
+    subprocess.run(command, shell=True, capture_output=True)
 
 
 if __name__ == "__main__":
@@ -46,7 +38,7 @@ if __name__ == "__main__":
         if str(hash.hash_berechnung(nfc_text)) == hash_code:
             print("correct")
             led_on(green)
-            log_in(username, password)
+            log_in()
             sleep(5)
             led_off(green)
         else:
