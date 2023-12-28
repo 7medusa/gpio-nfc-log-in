@@ -9,8 +9,8 @@ hash_code = "14b114aa5fadf41b4caa65f2dd788c0ae04a543231a6fadc7435257299dcec0d" #
  #  light control beginning
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
-green = 21
-red = 26
+green = 21 #  gpio pin of the green led
+red = 26 #  gpio pin of the red led
 GPIO.setup(green, GPIO.OUT)
 GPIO.setup(red, GPIO.OUT)
 def led_on(color):
