@@ -10,4 +10,4 @@ pip install time subprocess hashlib RPI.GPIO mfrc522 binascii
 
 How to use the Code:
 
-Save the main.py file in your autostart dictory.
+Save the main.py file in your autostart dictory or create in your Linux system a service with this script.
